@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "LeBron James leads Lakers to victory",
       content: "LeBron James scores 35 points in a thrilling win against the Warriors.",
       date: "2025-01-03",
-      image: "https://it.wikipedia.org/wiki/LeBron_Jameshttps://it.wikipedia.org/wiki/LeBron_James"
+      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/LeBron_James_%2851959977144%29_%28cropped2%29.jpg/640px-LeBron_James_%2851959977144%29_%28cropped2%29.jpg"
     },
     {
       title: "Trade Rumors: Will Damian Lillard move?",

@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Stay updated with the latest NBA news, player stats, and highlights.">
-  <meta name="keywords" content="NBA, Basketball, Stats, Highlights, News">
-  <meta name="author" content="NBA Now">
-  <title>NBA Now</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Now</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>NBA Now</h1>
-    <p>Your go-to hub for all things NBA</p>
-  </header>
-
-  <!-- Main Content -->
-  <main>
-    <!-- News Section -->
-    <section id="news">
-      <h2>Latest News</h2>
-      <div class="news-container"></div>
-    </section>
-
-    <!-- Stats Section -->
-    <section id="stats">
-      <h2>Player Statistics</h2>
-      <div class="stats-container"></div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section id="highlights">
-      <h2>Highlights</h2>
-      <div class="highlights-container"></div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-      <div id="formMessage"></div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 NBA Now. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <header>
+        <h1>NBA Now</h1>
+        <p>Your go-to hub for all things NBA.</p>
+    </header>
+    <main>
+        <section class="news">
+            <h2>Latest News</h2>
+            <div class="news-container">
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/150" alt="LeBron James" class="news-image">
+                    <h3>LeBron James leads Lakers to victory</h3>
+                    <p>LeBron James scores 35 points in a thrilling win against the Warriors.</p>
+                    <p class="date">2025-01-03</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/150" alt="Damian Lillard" class="news-image">
+                    <h3>Trade Rumors: Will Damian Lillard move?</h3>
+                    <p>Speculations arise about Damian Lillard's potential trade to Miami Heat.</p>
+                    <p class="date">2025-01-02</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/150" alt="MVP Race" class="news-image">
+                    <h3>MVP Race Heats Up</h3>
+                    <p>Giannis Antetokounmpo and Nikola Jokic are leading the MVP race this season.</p>
+                    <p class="date">2025-01-01</p>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <h2>Player Statistics</h2>
+            <div id="player-stats">Loading stats...</div>
+        </section>
+        <section class="highlights">
+            <h2>Highlights</h2>
+            <iframe 
+                width="560" 
+                height="315" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+        <footer>
+            <h2>Contact Us</h2>
+            <p>Email us at contact@nbanow.com</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "MVP Race Heats Up",
       content: "Giannis Antetokounmpo and Nikola Jokic are leading the MVP race this season.",
       date: "2025-01-01",
-      image: "https://via.placeholder.com/150"
+      image: "https://editriceilcastoro.it/wp-content/uploads/2022/02/f3a6f222-7a25-4b9d-a9fe-d3fbb3dc88d6-scaled.jpeg"
     }
   ];
 

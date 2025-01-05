@@ -42,7 +42,9 @@ section {
 }
 
 .news-card img {
-    max-width: 100%;
+    width: 150px; /* Imposta la larghezza desiderata */
+    height: 150px; /* Imposta l'altezza desiderata */
+    object-fit: cover; /* Adatta l'immagine senza distorsioni, tagliando se necessario */
     border-radius: 5px;
 }
 

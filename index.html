@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#latest-news">Latest News</a></li>
+            <li><a href="#player-stats">Player Stats</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>NBA Now</h1>
         <p>Your go-to hub for all things NBA.</p>
@@ -43,6 +51,17 @@
     <footer>
         <p>&copy; 2025 NBA Now. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for news details -->
+    <div id="news-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <img id="modal-image" src="" alt="News Image">
+            <p id="modal-content"></p>
+            <small id="modal-date"></small>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>

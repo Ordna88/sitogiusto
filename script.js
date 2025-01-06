@@ -21,37 +21,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   ];
 
-  // Populate Latest News Section
-  const newsSection = document.querySelector("#latest-news .news-container");
+  // News Modal
+  const modal = document.getElementById("news-modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalContent = document.getElementById("modal-content");
+  const modalImage = document.getElementById("modal-image");
+  const modalDate = document.getElementById("modal-date");
+  const closeModal = document.querySelector(".close");
 
+  // Populate News Section
+  const newsSection = document.querySelector("#latest-news .news-container");
   newsData.forEach(news => {
     const newsCard = document.createElement("div");
     newsCard.classList.add("news-card");
-
     newsCard.innerHTML = `
       <img src="${news.image}" alt="${news.title}">
       <h3>${news.title}</h3>
       <p>${news.content}</p>
       <small>${news.date}</small>
     `;
-
+    newsCard.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalTitle.textContent = news.title;
+      modalContent.textContent = news.content;
+      modalImage.src = news.image;
+      modalDate.textContent = news.date;
+    });
     newsSection.appendChild(newsCard);
   });
 
-  // Player Stats
-  const playerStats = [
-    "LeBron James (Lakers): 35 points",
-    "Giannis Antetokounmpo (Bucks): 40 points",
-    "Stephen Curry (Warriors): 32 points"
-  ];
+  // Close Modal
+  closeModal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
 
-  // Populate Player Stats Section
-  const statsSection = document.querySelector("#player-stats ul");
-
-  playerStats.forEach(stat => {
-    const statItem = document.createElement("li");
-    statItem.textContent = stat;
-    statsSection.appendChild(statItem);
+  window.addEventListener("click", event => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
   });
 });
-

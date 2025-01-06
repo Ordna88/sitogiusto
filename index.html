@@ -4,65 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NBA Now</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
         <ul>
-            <li><a href="#latest-news">Latest News</a></li>
-            <li><a href="#player-stats">Player Stats</a></li>
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Player Stats</a></li>
+            <li><a href="#">Highlights</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <header>
+
+    <!-- Hero Section -->
+    <header class="hero">
         <h1>NBA Now</h1>
         <p>Your go-to hub for all things NBA.</p>
     </header>
 
-    <main>
-        <section id="latest-news">
-            <h2>Latest News</h2>
-            <div class="news-container">
-                <!-- News cards will be populated dynamically here -->
+    <!-- Latest News Section -->
+    <section class="news-section">
+        <h2>Latest News</h2>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="News Image">
+                <h3>LeBron James leads Lakers to victory</h3>
+                <p>LeBron James scores 35 points in a thrilling win against the Warriors.</p>
+                <small>2025-01-03</small>
             </div>
-        </section>
-
-        <section id="player-stats">
-            <h2>Player Statistics</h2>
-            <ul>
-                <!-- Player stats will be populated dynamically here -->
-            </ul>
-        </section>
-
-        <section id="highlights">
-            <h2>Highlights</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                title="NBA Highlights" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Email us at <a href="mailto:support@nbanow.com">support@nbanow.com</a>.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 NBA Now. All rights reserved.</p>
-    </footer>
-
-    <!-- Modal for news details -->
-    <div id="news-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h3 id="modal-title"></h3>
-            <img id="modal-image" src="" alt="News Image">
-            <p id="modal-content"></p>
-            <small id="modal-date"></small>
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="News Image">
+                <h3>Trade Rumors: Will Damian Lillard move?</h3>
+                <p>Speculations arise about Damian Lillard's potential trade to Miami Heat.</p>
+                <small>2025-01-02</small>
+            </div>
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="News Image">
+                <h3>MVP Race Heats Up</h3>
+                <p>Giannis Antetokounmpo and Nikola Jokic are leading the MVP race this season.</p>
+                <small>2025-01-01</small>
+            </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Highlights Section -->
+    <section class="highlights-section">
+        <h2>Highlights</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email us at <a href="mailto:support@nbnow.com">support@nbnow.com</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 NBA Now. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

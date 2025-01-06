@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,46 @@ body {
     color: #333;
 }
 
+/* Navbar Styles */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+body {
+    padding-top: 60px;
+}
+
+/* Header Styles */
 header {
     text-align: center;
     background-color: #007bff;
@@ -17,6 +58,7 @@ h1 {
     margin: 0;
 }
 
+/* Section Styles */
 main {
     padding: 20px;
 }
@@ -25,6 +67,7 @@ section {
     margin-bottom: 40px;
 }
 
+/* News Section Styles */
 .news-container {
     display: flex;
     gap: 20px;
@@ -42,15 +85,60 @@ section {
 }
 
 .news-card img {
-    width: 150px; /* Imposta la larghezza desiderata */
-    height: 150px; /* Imposta l'altezza desiderata */
-    object-fit: cover; /* Adatta l'immagine senza distorsioni, tagliando se necessario */
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 5px;
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     background-color: #007bff;
     color: white;
     padding: 10px 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
